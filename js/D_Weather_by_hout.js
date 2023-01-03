@@ -57,20 +57,20 @@ fetch(urlD + apiKeyD + locationD).then((response)=>{
         const weatherDCode = weatherD[i]["elementValue"][1]["value"]; // get weather code
         switch (weatherDCode) { // set the weather icon
             case "01":
-                img.setAttribute("src", "icons/sunny.png"); // sunny
+                img.setAttribute("src", "img/sunny.png"); // sunny
                 break;
             case "02":
             case "03":
-                img.setAttribute("src", "icons/mostly-sunny.png"); // mostly-sunny
+                img.setAttribute("src", "img/mostly-sunny.png"); // mostly-sunny
                 break;
             case "04":
             case "05":
             case "06":
             case "07":
-                img.setAttribute("src", "icons/rainy.png"); // cloudy
+                img.setAttribute("src", "img/rainy.png"); // cloudy
                 break;
             default:
-                img.setAttribute("src", "icons/rainy.png"); // rainy
+                img.setAttribute("src", "img/rainy.png"); // rainy
         }
         img.style.width = "3em"; // can remove it once the file path is aligned
         const degree = document.createElement("div");
